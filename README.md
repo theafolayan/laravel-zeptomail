@@ -1,10 +1,24 @@
 **Laravel Zoho ZeptoMail readme**
 
+**About this fork**
+
+This is a fork of [zohomail/laravel-zeptomail](https://github.com/zohomail/laravel-zeptomail). It adds Laravel 13 and Symfony Mailer 8 support, removes a PHP 8.4 deprecation and adds a test suite that runs against Laravel 10, 11, 12 and 13. The package name and namespace are unchanged.
+
+To install it in place of the original, add this repository to `composer.json` and require a tagged release:
+
+```json
+"repositories": [
+    { "type": "vcs", "url": "https://github.com/theafolayan/laravel-zeptomail.git" }
+]
+```
+
+```composer require zohomail/laravel-zeptomail:^1.1```
+
 **Pre-requisites**
 
 1.  Zoho ZeptoMail application with verified domain.
     
-2.  Laravel v9.0 and above.
+2.  Laravel v9.0 to v13.
     
 
 **Installation and configuration**
